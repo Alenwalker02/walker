@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script language="javascript">
+function formvalidate()
+{
+var username=document.ff.loginid.value;
+if (username=="")
+alert("Username Cannot be Empty");
+var password=document.ff.pwd.value;if(password=="")
+alert("Password cannot be Empty");
+repassword=document.ff.pwd1.value;
+if(password!=repassword)
+alert("password Mismatch");
+var gvalue=="";
+for(var i=0; i<document.ff.gender.length; i++)
+{
+if(document.ff.gender[i].value)
+{
+gvalue=document.ff.gender[i].value;
+break;
+}
+}
+if(gvalue=="")
+{
+alert("Please Select Your Gender");
+}
+date=document.ff.date1.value;
+if(date="")
+{
+alert("Please Select Your Date of Birth");
+}
+var address=document.ff.address1.value;
+alert("Please Enter your Address");var mobileno=document.ff.mobno.value;
+var mno=parseInt(mobno.value)
+if((mobileno=="")||(isNaN(mno))||(mobileno.length!=10))
+{
+alert("Please Enter !0 Digit Mobile Number");
+}
+}
+</script>
+</head>
+<body bgcolor="">
+<center><b><font size="7" face="Times New Roman">WELCOME TO
+REGISTRATION PAGE</font><br><br>
+<form name=ff method="post" onsubmit="return formvalidate()">
+<table>
+<tr>
+<td>Username</td>
+<td><input type="text" name="loginid"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="pwd"></td>
+</tr>
+<tr><td>Retype Password</td>
+<td><input type="password" name="pwd1"></td>
+</tr>
+<tr>
+<td>Gender<input type="radio" name="gender"
+value="male">Male
+&nbsp;&nbsp;<input type="radio" name="gender"
+value="female">Female
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name="date"></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea rows="3" cols="30"></textarea></td>
+</tr>
+<tr>
+<td>Mobile No.</td>
+<td><input type="text" name="mobno"></td>
+</tr><tr>
+<td><input type="submit" name="subn"
+value="submit"></td>
+<td><input type="reset" name="reset" value="Cancel! Try
+Agian"></td>
+</tr>
+</table>
+<br>
+<a href="WebPage1.html"><b>Back</a>
+</form>
+</center>
+</body>
+</html>

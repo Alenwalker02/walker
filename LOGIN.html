@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Login Form</title>
+<script language="javascript">
+function loginvalidation()
+{
+var flag=1;
+var username=document.ff.user1.value;
+var password=document.ff.pwd1.value;
+if((username=="")||(password=""))
+{
+alert("Please Enter the Username And Password");
+}
+if(!isNaN(username[0]))
+{alert("Username Cannot Have a Number");
+}
+}
+</script>
+</head>
+<body bgcolor="green">
+<center>
+<font face="Cambria" >
+<h1>LOGIN FORM</h1>
+</font>
+<form name="ff" method="post" onSubmit=loginvalidation()>
+<table cellpadding="10">
+<tr>
+<td>Username</td>
+<td><input type="text" name="user1"></td><br>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="Password" name="pwd1"></td><br>
+</tr>
+<tr>
+<td><input type="Submit" name="sub1"
+value=Login></td><td><input type="reset" value="clear"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

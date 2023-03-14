@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Simple javascript Program</title>
+
+<script language="javascript">
+function Add()
+{
+ var x=parseInt("24");
+  var a=paeseInt(prompt("Enter number1))";
+  var b=parseInt(prompt("Enter number2))";
+  var sum=a+b;
+   document.write("the value of a is"+a);
+    document.write("<br>");
+     document.write("the value of b is"+b);
+      document.write("<br>");
+       document.write("the sum is"+sum);
+}
+ </script>
+ </head>
+<body>
+<script language="javascript">
+Add();
+</script>
+</body>
+</html>

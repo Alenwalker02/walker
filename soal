@@ -1,0 +1,25 @@
+<html>
+<head>
+<title></title>
+
+<script language="javascript">
+function Add()
+ {
+  var a=parseInt(prompt("enter number:"));
+  var sum=0;
+  for(i=1;i<=a;i++)
+   {
+    sum=sum+i;
+   }
+   document.write("sum is:"+sum);
+   
+ }
+ 
+ </script>
+ </head>
+<body>
+<script language="javascript">
+Add();
+</script>
+</body>
+</html>

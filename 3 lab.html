@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script language="javascript">
+		function formValidate()
+		{
+			var username=document.ff.usern.value;
+			if(username=="")
+			{
+				alert("username cannot be left empty");
+			}
+			var password=document.ff.pwd.value;
+			var plength=password.length;
+			if((plength<4)||(plength>8))
+			{
+				alert("Invalid data")
+			}
+			var password1=document.ff.pwd1.value;
+			if(password!=password1)
+			{
+				alert("password mismatch");
+			}
+			for(var i=0;i<document.ff.gender.length;i++)
+			{
+				if(document.ff.gender[i].checked)
+				{
+					alert("you selected"+document.ff.gender[i].value);
+					break;
+				}
+			}
+			
+		}		
+	</script>
+</head>
+<body>
+	<h1><marquee>REGISTRATION FORM</h1></marquee>
+	<form name=ff method=post>
+		USERNAME<input type=text name=usern><br>
+		PASSWORD<input type=password name=pwd><br>
+		RETYPE PASSWORD <input type=password name=pwd1><br>
+		Date of Birth:<br>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select><br>
+		gender<br>
+		<input type=radio name=gender value=Male>Male &nbsp;&nbsp;
+		<input type=radio name=gender value=Female>Female<br> 
+
+		<input type=button name=btn value="click me" onClick=formValidate();><br>
+		
+	</form>
+
+</body>
+</html>
